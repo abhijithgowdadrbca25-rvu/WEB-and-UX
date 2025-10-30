@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Webpage</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #4CAF50;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark-mode header {
+      background-color: #222;
+    }
+
+    .dark-mode footer {
+      background-color: #000;
+    }
+
+    .dark-mode button {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Abhijith Gowda</h1>
+    <p>Student | Web Developer | Learner</p>
+  </header>
+
+  <img src="cbum.jpg" alt="Profile Picture">
+
+  <h2>About Me</h2>
+  <p id="about">I am a student of RV University,I just created a simple webpage using CSS,HTML,JAVA SCPRIT</p>
+  <h2>Skills</h2>
+ <ul>
+    <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Problem Solving</li>
+ </ul>
+
+  <button onclick="changeText()">Know More</button>
+  <button onclick="toggleTheme()">Change Theme</button>
+
+  <footer>
+    <p>&copy; 2025 Abhijith Gowda</p>
+  </footer>
+
+  <script>
+    function changeText() {
+      document.getElementById("about").innerHTML =
+        "I am having the knowldge of C,C++,DSA,PYTHON,JAVA,JAVA SCRIPT,HTML";
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
