@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Webpage</title>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px gray;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #4CAF50;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Dark Mode Theme */
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark-mode .container {
+      background-color: #1e1e1e;
+      box-shadow: 0 0 10px #666;
+    }
+
+    .dark-mode header {
+      background-color: #222;
+    }
+
+    .dark-mode footer {
+      background-color: #000;
+    }
+
+    .dark-mode button {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Abhijith Gowda</h1>
+    <p>Student | Web Developer | Learner</p>
+  </header>
+
+  <div class="container">
+    <img src="cbum.jpg">
+
+    <h2>About Me</h2>
+    <p id="about">Hello! I'm Abhijith Gowda, a passionate student learning web development. 
+      I enjoy creating simple and clean websites using HTML, CSS, and JavaScript.</p>
+    
+    <button onclick="changeText()">Know More</button>
+    <button onclick="toggleTheme()">Change Theme</button>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python Basics</li>
+      <li>Creative Thinking</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: abhijithgowda@example.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Abhijith Gowda | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Function to change text content
+    function changeText() {
+      document.getElementById("about").innerHTML = 
+        "I'm a student exploring web technologies and design. I enjoy coding and learning new things!";
+    }
+
+    // Function to toggle light/dark theme
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
